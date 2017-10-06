@@ -1,3 +1,29 @@
+libxfont (1:1.5.1-1ubuntu0.16.04.3) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: invalid memory read in PatternMatch
+    - debian/patches/CVE-2017-13720.patch: check for end of string in
+      src/fontfile/fontdir.c.
+    - CVE-2017-13720
+  * SECURITY UPDATE: DoS or info leak via malformed PCF file
+    - debian/patches/CVE-2017-13722.patch: check string boundaries in
+      src/bitmap/pcfread.c.
+    - CVE-2017-13722
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 06 Oct 2017 11:44:24 -0400
+
+libxfont (1:1.5.1-1ubuntu0.16.04.2) xenial; urgency=medium
+
+  * Install developer documentation under the correct path. (LP:
+    #1709885)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 11 Aug 2017 01:16:51 +0300
+
+libxfont (1:1.5.1-1ubuntu0.16.04.1) xenial; urgency=medium
+
+  * Rename libxfont-dev to libxfont1-dev. (LP: #1687981)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Sat, 13 May 2017 08:01:15 +0300
+
 libxfont (1:1.5.1-1) unstable; urgency=high
 
   * New upstream release
