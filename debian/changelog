@@ -1,3 +1,12 @@
+libxfont (1:1.5.1-1ubuntu0.16.04.4) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: non-privileged arbitrary file access
+    - debian/patches/CVE-2017-16611.patch: open files with O_NOFOLLOW in
+      src/fontfile/dirfile.c, src/fontfile/fileio.c.
+    - CVE-2017-16611
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 28 Nov 2017 14:46:50 -0500
+
 libxfont (1:1.5.1-1ubuntu0.16.04.3) xenial-security; urgency=medium
 
   * SECURITY UPDATE: invalid memory read in PatternMatch
